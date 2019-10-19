@@ -1,0 +1,4 @@
+<p>main works!</p>
+<a *ngFor="let image of images" [routerLink]="['/cats', image.id]">
+  <img src="{{image.url}}" width=200/>
+</a>
