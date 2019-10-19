@@ -1,4 +1,8 @@
-<p>main works!</p>
-<a *ngFor="let image of images" [routerLink]="['/cats', image.id]">
-  <img src="{{image.url}}" width=200/>
-</a>
+<div class="grid-container">
+  <figure *ngFor="let image of images">
+    <a [routerLink]="['/cats', image.id]">
+      <img class="grid-image" src="{{image.url}}" />
+    </a>
+  </figure>
+</div>
+<intersection-observer (intersect)="onIntersect()" ></intersection-observer>

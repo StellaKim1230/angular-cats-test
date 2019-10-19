@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { MainComponent } from './main/main.component';
 import { CatComponent } from './cat/cat.component';
+import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     MainComponent,
-    CatComponent
+    CatComponent,
+    IntersectionObserverComponent
   ],
   imports: [
     BrowserModule,
